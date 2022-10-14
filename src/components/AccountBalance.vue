@@ -22,6 +22,12 @@
 
     <p class="debit mb-7">My debit cards</p>
 
+    <div class="d-flex justify-end">
+      <button class="d-flex align-center btn-show-card">
+        <img src="../assets/eye.svg" alt="" />
+        <p class="show-card-text">Show card number</p>
+      </button>
+    </div>
     <swiper
       :pagination="true"
       :modules="modules"
@@ -120,7 +126,6 @@ export default {
     //   console.log("slide changed");
     // });
   },
-
 };
 </script>
 
@@ -200,6 +205,22 @@ export default {
 .visa {
   width: 59px;
   height: 20px;
+}
+
+.btn-show-card {
+  padding: 5px 10px;
+  background: #ffffff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  position: relative;
+  bottom: -1px;
+  right: 6px;
+}
+
+.show-card-text {
+  color: #01d167;
+  font-size: 12px;
+  margin-left: 6px;
 }
 
 /* swiper */
