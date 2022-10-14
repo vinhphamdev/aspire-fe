@@ -2,14 +2,14 @@
   <div class="wrap pt-6">
     <div class="transactions">
       <button
-        class="collapsible d-flex justify-space-between"
+        class="collapsible1 d-flex justify-space-between"
         @click="collapsible()"
       >
         <div class="d-flex">
-          <img src="../assets/recent-transactions.svg" alt="" />
-          <p class="ml-3">Recent transactions</p>
+          <img src="../assets/card-details.svg" alt="" />
+          <p class="ml-3">Card details</p>
         </div>
-        <img src="../assets/down-arrow.svg" alt="" class="arrow" />
+        <img src="../assets/down-arrow.svg" alt="" class="arrow1" />
       </button>
       <div class="wrap_content">
         <div class="content">
@@ -89,8 +89,8 @@ export default {
 
   methods: {
     collapsible() {
-      var coll = document.getElementsByClassName("collapsible");
-      var arrow = document.getElementsByClassName("arrow");
+      var coll = document.getElementsByClassName("collapsible1");
+      var arrow = document.getElementsByClassName("arrow1");
       var i;
 
       for (i = 0; i < coll.length; i++) {
@@ -112,7 +112,7 @@ export default {
 
 
 <style scoped>
-.collapsible {
+.collapsible1 {
   background-color: #fafcff;
   color: #222222;
   cursor: pointer;
@@ -126,7 +126,6 @@ export default {
 
 .wrap {
   background: white;
-  padding-bottom: 80px;
 }
 
 .transactions {

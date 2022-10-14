@@ -113,19 +113,14 @@ export default {
   },
 
   mounted() {
-    const swiper = new Swiper(".swiper", {
-      // ...
-    });
-    swiper.on("slideChange", function () {
-      console.log("slide changed");
-    });
+    // const swiper = new Swiper(".swiper", {
+    //   // ...
+    // });
+    // swiper.on("slideChange", function () {
+    //   console.log("slide changed");
+    // });
   },
 
-  watch: {
-    swiper(newValue, oldValue) {
-      console.log("newValue", newValue);
-    },
-  },
 };
 </script>
 
